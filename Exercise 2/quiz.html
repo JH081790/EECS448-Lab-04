@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 2/Quiz</title>
+</head>
+<body>
+        <?php include 'quiz.php';?>
+        <form action="quiz.php" method="post">
+            <h4>Question 1: What team is Naruto put on to begin his ninja career?</h5>
+            <input type="radio" name="team" id="nTeam" value="7">
+            <label for="nTeam">9</label>
+            <br>
+            <input type="radio" name="team" id="nTeam" value="20">
+            <label for="nTeam">20</label>
+            <br>
+            <input type="radio" name="team" id="nTeam" value="7">
+            <label for="nTeam">7</label>
+            <br>
+            <input type="radio" name="team" id="nTeam"value="11" >
+            <label for="nTeam">11</label>
+            <?php echo $teamErr?>
+            <br>
+            <input type="submit">
+        </form>
+        
+</body>
+</html>
